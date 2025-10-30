@@ -1,0 +1,214 @@
+body {
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.nav-link:hover {
+    color: #f9e65c !important;
+}
+
+#home h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    /* bold */
+}
+
+
+.hero-section {
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    /* Ensures video covers hero section */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* dark overlay for text readability */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #f9e65c;
+    padding: 0 20px;
+}
+
+#unmute-btn {
+    margin-top: 20px;
+}
+
+
+
+
+
+h2,
+h3,
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    /* medium-bold */
+}
+
+p,
+li,
+span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    /* light */
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    /* bold */
+}
+
+h2,
+h3,
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    /* medium-bold */
+}
+
+p {
+    line-height: 1.7;
+    font-size: 1rem;
+    /* or 1.05rem for slightly larger text */
+}
+
+p,
+li,
+span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    /* light */
+}
+
+/* Card hover lift + shadow 
+.card:hover {
+    background-color: #f9e65c !important;
+    color: #054a29 !important;
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}*/
+/* Card hover lift + shadow */
+#events .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#events .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+    /* Optional: keep card background neutral */
+    background-color: #fff;
+}
+
+/* Image hover glow / subtle pop */
+#events .card-img-top {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    border-radius: 0.5rem;
+}
+
+#events .card-img-top:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 8px 15px rgba(58, 125, 68, 0.5));
+}
+
+/* Optional: smooth background highlight on card hover */
+#events .card-body:hover {
+    background-color: rgba(58, 125, 68, 0.05);
+    transition: background-color 0.3s ease;
+}
+
+/* PROGRAM CARDS IN RESOURCES */
+.program-card {
+    background-color: rgba(0, 0, 0, 0.35);
+    /* semi-transparent overlay */
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.program-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.45);
+    background-color: rgba(0, 0, 0, 0.5);
+    /* subtle darken on hover */
+}
+
+.program-card .card-img-top {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    border-radius: 0.5rem;
+}
+
+.program-card .card-img-top:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 8px 20px rgba(255, 255, 0, 0.5));
+    /* subtle glow */
+}
+
+.program-card .card-body:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Ensure links remove default styles */
+.program-card a,
+.program-card a:hover,
+.program-card a:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* TEAM CARDS */
+.team-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+}
+
+.team-card .card-img-top {
+    transition: transform 0.3s ease;
+}
+
+.team-card .card-img-top:hover {
+    transform: scale(1.05);
+}
+
+.btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
