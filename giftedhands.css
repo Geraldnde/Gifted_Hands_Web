@@ -7,6 +7,55 @@ body {
     color: #f9e65c !important;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar link smooth hover */
+.nav-link {
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #f9e65c !important;
+    border-bottom: 2px solid #f9e65c;
+}
+
+/* Hero CTA button hover */
+
+.hero-content .btn:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+}
+
+
+
+/* Add this to your CSS */
+.hero-content h1,
+.hero-content p,
+.hero-content .btn {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-out;
+}
+
+.hero-content.loaded h1,
+.hero-content.loaded p,
+.hero-content.loaded .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.nav-link.active,
+.nav-link:hover {
+    color: #f9e65c !important;
+    border-bottom: 2px solid #f9e65c;
+}
+
 #home h1 {
     font-family: 'Poppins', sans-serif;
 }
@@ -22,6 +71,7 @@ h1 {
     position: relative;
     height: 90vh;
     overflow: hidden;
+
 }
 
 .hero-video {
@@ -51,7 +101,7 @@ h1 {
 
 .hero-content {
     position: relative;
-    z-index: 2;
+    z-index: 10;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -211,4 +261,10 @@ span {
 .btn {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+}
+
+.btn-custom {
+    border-radius: 50px;
+    padding: 0.75rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }

@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="giftedhands.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navmenu" data-bs-offset="100" tabindex="0">
+
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
         <div class="container">
@@ -41,6 +42,7 @@
         </div>
     </nav>
 
+
     <!-- HERO SECTION -->
     <section id="home" class="hero-section position-relative">
         <video id="hero-video" autoplay muted loop playsinline>
@@ -50,8 +52,9 @@
 
         <div class="hero-overlay"></div>
         <div class="hero-content text-center">
-            <h1 class="display-4 fw-bold text-warning">Healing Through Creativity</h1>
-            <p class="lead">Empowering minds and fostering connection through art and compassion.</p>
+            <h1 class="display-4 fw-bold text-warning">Healing Through Creativity & Connection</h1>
+            <p class="lead">Empowering minds, fostering hope, and equipping communities with tools for self-expression
+                through art.</p>
             <a href="#about" class="btn btn-warning btn-lg mt-3 fw-bold text-success">Discover More</a>
             <button id="unmute-btn" class="btn btn-outline-light btn-lg mt-3">🔊 Unmute</button>
         </div>
@@ -67,12 +70,34 @@
                 <div class="col-md-6">
                     <h2 class="text-success fw-bold mb-3">Our Mission</h2>
                     <p class="fs-5">
-                        Gifted Hands and Healing Voices is a creative expression and community well-being initiative
-                        that empowers
-                        underserved groups through art, storytelling, and collaborative workshops. Our mission is to
-                        bring healing,
-                        connection, and hope to crisis-affected communities through creativity and compassion.
+                        Gifted Hands & Healing Voices empowers vulnerable communities — including children with
+                        disabilities, orphans, and adolescents — through creative workshops in art, storytelling, and
+                        collaboration.
+                        <strong>Guided by volunteers, not licensed art therapists, our sessions focus on
+                            self-expression, connection, and hope.</strong>
                     </p>
+                    <p class="fs-5">
+                        We welcome partners, mentors, and volunteers to join us in delivering impactful, low-cost
+                        programs that strengthen individuals and communities.
+                    </p>
+
+                    <!-- Buttons aligned with container padding -->
+                    <div class="mt-4 d-flex flex-wrap gap-3">
+                        <a href="https://bit.ly/volunteer4april" target="_blank"
+                            class="btn btn-success btn-lg fw-bold text-warning"
+                            style="border-radius: 50px; padding: 0.75rem 2rem; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                            Join as Volunteer
+                        </a>
+                        <a href="#partners" class="btn btn-outline-success btn-lg fw-bold text-success"
+                            style="border-radius: 50px; padding: 0.75rem 2rem; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                            Become a Partner
+                        </a>
+                        <a href="#resources" class="btn btn-warning btn-lg fw-bold text-success"
+                            style="border-radius: 50px; padding: 0.75rem 2rem; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                            Learn More
+                        </a>
+                    </div>
+
                 </div>
                 <div class="col-md-6 text-center">
                     <img src="us.jpg" alt="Creative Healing Session" class="img-fluid rounded shadow-lg">
@@ -80,6 +105,11 @@
             </div>
         </div>
     </section>
+
+
+
+
+
 
 
     <!-- VIDEO -->
@@ -335,6 +365,55 @@
             </div>
         </section>
 
+
+        <!-- TESTIMONIALS -->
+        <section id="testimonials" class="py-5 bg-white text-center">
+            <div class="container">
+                <h2 class="text-success fw-bold mb-4">Voices of Impact</h2>
+                <p class="text-muted fs-5 mb-5" style="max-width:700px;margin:auto;">
+                    Hear directly from our participants and partners about how creativity inspires healing and hope.
+                </p>
+
+                <!-- VIDEO TESTIMONIAL -->
+                <div class="mb-5">
+                    <h3 class="text-success fw-bold mb-3">Testimonials from Divine Touch Orphanage</h3>
+
+                    <div class="card mx-auto shadow-lg border-0"
+                        style="max-width:650px;overflow:hidden;border-radius:1rem;">
+                        <video controls poster="divine-touch-orphanage.jpg" style="width:100%;border-radius:1rem;">
+                            <source src="divine-touch-testimonial.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <p class="text-muted mt-3">Interview with two children from the Divine Touch Orphanage.</p>
+                </div>
+
+                <!-- WRITTEN TESTIMONIALS -->
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <blockquote class="p-4 bg-light shadow-sm rounded h-100">
+                            “I enjoyed the drawing and the way it was explained. It made me feel calm.”
+                            <footer class="text-success mt-2">— Participant, Special Needs Entrepreneurs Group</footer>
+                        </blockquote>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <blockquote class="p-4 bg-light shadow-sm rounded h-100">
+                            “Music helps me get rid of sad thoughts. I felt lighter after the session.”
+                            <footer class="text-success mt-2">— Participant, Special Needs Entrepreneurs Group</footer>
+                        </blockquote>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <blockquote class="p-4 bg-light shadow-sm rounded h-100">
+                            “Always come visit us. We look forward to these sessions.”
+                            <footer class="text-success mt-2">— Participant, Special Needs Entrepreneurs Group</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- MEET THE TEAM -->
         <section id="team" class="py-5 bg-light">
             <div class="container text-center">
@@ -394,23 +473,46 @@
                 </div>
             </div>
         </section>
+
         <!-- VOLUNTEER CTA -->
         <section id="volunteer" class="py-5 text-center" style="background: #f9e65c;">
             <div class="container">
                 <h2 class="fw-bold mb-3" style="color: #054a29;">Join Us as a Volunteer</h2>
                 <p class="mb-4 fs-5" style="max-width: 700px; margin: auto; color: #054a29;">
-                    Gifted Hands & Healing Voices is powered by passionate creatives who want to bring healing and
-                    connection
-                    to underserved communities. If you would like to volunteer and be part of our creative journey, we’d
-                    love
-                    to have you on board!
+                    As a volunteer, you’ll help reshape the stories of individuals who have forgotten what it feels like
+                    to be seen or heard.
+                    Through creativity and compassion, you’ll grow in the space of volunteerism — gaining skills,
+                    purpose, and exposure to new opportunities
+                    in your journey of creating social impact.
                 </p>
+                <ul class="list-unstyled fs-5 text-start mx-auto" style="max-width: 600px; color: #054a29;">
+                    <li>✅ Required: Time, commitment, and presence.</li>
+                    <li>🌱 Gain: Growth, learning, and deeper community engagement.</li>
+                </ul>
                 <a href="https://bit.ly/volunteer4april" target="_blank"
-                    class="btn btn-success btn-lg fw-bold text-warning" style="border-radius: 50px;">
+                    class="btn btn-success btn-lg fw-bold text-warning mt-3" style="border-radius: 50px;">
                     Sign Up to Volunteer
                 </a>
             </div>
         </section>
+
+
+        <section id="partners" class="py-5 bg-light text-center">
+            <div class="container">
+                <h2 class="text-success fw-bold mb-4">For Partners</h2>
+                <p class="text-muted fs-5" style="max-width:700px;margin:auto;">
+                    We collaborate with organizations and supporters who share our belief in creative health and
+                    inclusion.
+                    Together, we amplify stories of hope and make lasting community impact.
+                    In return, partners benefit from <strong>branding, visibility, and shared advocacy</strong> across
+                    our platforms.
+                </p>
+            </div>
+        </section>
+
+
+
+
 
         <!-- FOOTER -->
         <footer class="text-center text-light py-5" style="background-color: #054a29;">
@@ -447,6 +549,46 @@
                 video.play();               // ensure video keeps playing
                 unmuteBtn.style.display = 'none'; // hide button after click
             });
+        </script>
+        <script>
+            const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+                target: '#navmenu',
+                offset: 100
+            });
+        </script>
+        <!-- Add this at the end of <body>, just before </body> -->
+        <button id="scrollTopBtn" title="Go to top" style="position: fixed; bottom: 40px; right: 40px; display: none; z-index: 99;
+               border: none; outline: none; background-color: #f9e65c; color: #054a29;
+               cursor: pointer; padding: 12px; border-radius: 50%; font-size: 18px;">
+            ↑
+        </button>
+
+        <script>
+            // Scroll-to-top button
+            const scrollBtn = document.getElementById("scrollTopBtn");
+
+            window.onscroll = function () {
+                if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                    scrollBtn.style.display = "block";
+                } else {
+                    scrollBtn.style.display = "none";
+                }
+            };
+
+            scrollBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        </script>
+        <!-- JS: add after existing script -->
+        <script>
+            // Add loaded class after page loads
+            const heroVideo = document.getElementById('hero-video');
+            const heroContent = document.querySelector('.hero-content');
+
+            heroVideo.addEventListener('canplay', () => {
+                heroContent.classList.add('loaded');
+            });
+
         </script>
 
 </body>
